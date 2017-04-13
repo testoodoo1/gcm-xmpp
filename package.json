@@ -1,0 +1,23 @@
+{
+  "name": "xmpp-server",
+  "version": "1.0.0",
+  "description": "xmpp-server.js",
+  "main": "c2server.js",
+  "dependencies": {
+    "node-xmpp-client": "3.0.0",
+    "node-xmpp-server": "2.1.2",
+    "mysql2": "0.15.8",
+    "querystring": "0.2.0",
+    "console-stamp" : "0.2.0",
+    "crypto" : "0.0.3",
+    "xmldom": "0.1.22",
+    "node-serialize": "0.0.4",
+    "base64encodedecode": "0.0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@os1.oodoo.co.in:gk/gcm-xmpp.git"
+  },
+  "author": "author",
+  "license": "ISC"
+}
