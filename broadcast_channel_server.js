@@ -62,7 +62,7 @@ function get_user_channel_history(user_history, cb){
     var connection = mysql.createConnection({
         host     : 'localhost',
         user     : 'root',
-        password : '1projectK!',
+        password : 'root',
         database : 'gcm',
     }); 
 
@@ -80,7 +80,7 @@ function get_live_channel(message, cb){
     var connection = mysql.createConnection({
       host     : 'localhost',
       user     : 'root',
-      password : '1projectK!',
+      password : 'root',
       database : 'gcm',
     }); 
 
@@ -98,14 +98,14 @@ function ad_broadcast(message, cb){
         var connection = mysql.createConnection({
           host     : 'localhost',
           user     : 'root',
-          password : '1projectK!',
+          password : 'root',
           database : 'gcm',
         }); 
 
     var dev_id = '877';
     //hostname = 'xmpp.projectk.oodoo.co.in';
     //hostname = '192.168.0.100'; // demo
-    hostname = '192.168.1.17';
+    hostname = '192.168.1.31';
     username = 'pjtku3';//received from server by dev_id
     to_hash = dev_id+username;
     password = crypto.createHash('md5').update(to_hash).digest("hex"); //encrypt of dev_id and username

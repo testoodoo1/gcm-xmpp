@@ -5,14 +5,14 @@ var mysql      = require('mysql2');
     var connection = mysql.createConnection({
       host     : 'localhost',
       user     : 'root',
-      password : '1projectK!',
+      password : 'root',
       database : 'gcm',
     }); 
 
-var dev_id = '9873';
+var dev_id = '876';
 //hostname = 'xmpp.projectk.oodoo.co.in';
 //hostname = '192.168.0.100'; //demo
-hostname = '192.168.1.17';
+hostname = '192.168.1.31';
 username = 'pjtku2';//received from server by dev_id
 to_hash = dev_id+username;
 console.log(to_hash);
@@ -39,7 +39,7 @@ var client1 = new Client({
 /*    connection.execute('SELECT user_id from DeviceTable', function(err, rows){
       if(rows.length > 0){
         for(var j=0; j < rows.length; j++){*/
-          var message = new xmpp.Stanza('message').c('pcm', xmlns="projectk:mobile:data").t('{"data": {"to":"pjtku2","from":"pjtku1","action":"chat", "notify_count" : "10", "message": "hello_too"}, "message_id":"test321","message_type" : "data"}').up();
+          var message = new xmpp.Stanza('message').c('pcm', xmlns="projectk:mobile:data").t('{"data": {"to":"pjtku1","from":"pjtku2","action":"chat", "notify_count" : "10", "message": "hello_too"}, "message_id":"test321","message_type" : "data"}').up();
           client1.send(message);
           console.log('message_sent to : pjtku2');
 /*        }

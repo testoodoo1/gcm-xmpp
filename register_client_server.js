@@ -23,7 +23,7 @@ var server = http.createServer(function (req, res) {
 					var connection = mysql.createConnection({
 					  host     : 'localhost',
 					  user     : 'root',
-					  password : '1projectK!',
+					  password : 'root',
 					  database : 'gcm',
 					});	
 				result = ''

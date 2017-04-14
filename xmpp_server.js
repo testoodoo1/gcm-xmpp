@@ -26,7 +26,7 @@ var namespace = 'projectk:mobile:data';
 var clients = [];
 //var domain = 'xmpp.projectk.oodoo.co.in';
 //var domain = '192.168.0.100'; //demo
-var domain = '192.168.1.17';
+var domain = '192.168.1.31';
 //var domain = 'localhost';
 var port = 5245;
 var c2s = new xmpp.C2SServer({
@@ -39,7 +39,7 @@ var mysql      = require('mysql2');
     var connection = mysql.createConnection({
       host     : 'localhost',
       user     : 'root',
-      password : '1projectK!',
+      password : 'root',
       database : 'gcm',
     }); 
 
